@@ -82,4 +82,32 @@ I am proud of myself for pushing through, and I'm excited to keep building on th
 - File-based contact saving/loading
 - Optional OOP refactor
 
+---
 
+# 🔧 Refactoring Plan – Contact Manager (ver 1.1)
+
+This refactoring plan aims to improve the readability, stability, and extensibility of the existing version 1.0 code for the Contact Manager project.
+
+## ✅ Improvement Summary
+
+| Item | Current Status | Planned Improvement | Reason |
+|------|----------------|----------------------|--------|
+| Output Format | Printing full dictionary `{contact}` | Change to `Name: XX, Number: YY` format | More readable for users |
+| Input Validation | None | Use `strip()`, `isdigit()`, etc. | Prevent invalid input |
+| Repeated Empty Checks | `len(contacts) < 1` used repeatedly | Use `if not contacts:` | Cleaner and shorter code |
+| Search/Delete Logic | Logic written directly in loops | Extract into function `search_contact(name)` | Increases reusability |
+| Menu Handling | Manual `if choice == "1"` checks | (Optional) Use functions or dictionary mapping | Better maintainability |
+
+## 🧠 Refactoring Order
+
+1. Start with improving the output format (visual feedback boosts motivation)
+2. Add input validation (focus on input handling)
+3. Simplify repeated checks (`if not contacts:`)
+4. Refactor search/delete logic into functions
+5. If time allows, improve menu handling via functions or dictionary mapping
+
+## 🛠️ Post-Refactor Testing Plan
+
+- Test functionality of each menu option
+- Ensure invalid inputs (e.g., blank or non-numeric) are handled safely
+- Verify appropriate messages are shown when searching/deleting non-existent names
