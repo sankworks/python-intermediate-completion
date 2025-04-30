@@ -54,3 +54,32 @@ I am proud of myself for pushing through, and I'm excited to keep building on th
 ---
 
 # 🌟 Let’s keep building! 🌟
+
+---
+
+# 📇 Python Mini Project #1 - Personal Contact Manager (ver 1.0)
+
+## 🔗 Blog Post
+▶️ [Read full write-up on dev.to](https://dev.to/sankworks/python-mini-project-1-personal-contact-manager-ver-10-2eah)
+
+## 📁 Files
+- `contact_manager_v1.py` — full source code
+- `contact_manager_v1_post.md` — blog post backup
+
+## 🧾 Features
+- Add / Search / Delete / View contacts
+- CLI-based menu interface
+- Uses list of dictionaries to store contact info
+- Input validation & edge case handling
+
+## 🛠️ Built With
+- Python 3
+- Terminal/Command Line
+
+## 🔜 Next Version (1.1) Plan
+- User-friendly formatted output
+- Input validation
+- File-based contact saving/loading
+- Optional OOP refactor
+
+
