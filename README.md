@@ -111,3 +111,17 @@ This refactoring plan aims to improve the readability, stability, and extensibil
 - Test functionality of each menu option
 - Ensure invalid inputs (e.g., blank or non-numeric) are handled safely
 - Verify appropriate messages are shown when searching/deleting non-existent names
+
+- ---
+
+## ✅ Version 1.1 Completed!
+
+- Added input validation (e.g., blank name, non-digit phone number)
+- Improved output formatting for better readability
+- Enhanced search/delete stability (case-insensitive)
+- Simplified condition checks using `if not contacts`
+- Left `menu handler refactoring` (e.g., mapping choice to functions) **as a planned enhancement for Mini Project 2**
+
+🗂️ File: `contact_manager_v1.1.py`
+📌 Status: ✅ Feature complete and stable
+
