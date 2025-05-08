@@ -125,3 +125,107 @@ This refactoring plan aims to improve the readability, stability, and extensibil
 🗂️ File: `contact_manager_v1.1.py`
 📌 Status: ✅ Feature complete and stable
 
+----
+
+# 🧙‍♂️ RPG Simulator v1.0
+
+This is a simple text-based RPG battle simulator written in Python.
+
+It was created as part of my beginner learning journey with SoloLearn and ChatGPT.  
+The project includes basic character stats, turn-based combat logic, and plans for future AI improvements.
+
+---
+
+## ✅ Features (v1.0)
+
+- Choose battle mode: Easy (vs. Fox) or Hard (vs. Dragon)
+- Choose your character: Knight or Wizard
+- Each has unique stats (`str`, `int`, `HP`, `MP`)
+- Battle actions:
+  - `Attack`: uses `str`, no MP cost
+  - `Spell`: uses `int`, costs 10 MP
+- Spell availability is limited by current MP
+- If the enemy dies from your attack, it won't counterattack
+- Victory and defeat messages displayed after battle
+
+---
+
+## 🐉 Upcoming Improvements (v1.1)
+
+- Dragon in Hard Mode will randomly choose `attack` or `spell` each turn
+  - Only casts spell if it has enough MP
+- Encapsulate battle logic into reusable functions
+- Clean up duplicated code for Knight/Wizard flow
+- Unify character and enemy stats into dictionary-based objects
+- Add draw/tie result if both HPs reach 0
+
+---
+
+## 📂 File Structure
+
+```
+rpg-simulator/
+├── main.py             # The main game logic
+├── README.md           # Project description
+```
+
+---
+
+## 🧪 Sample Output (v1.0)
+
+```
+===== RPG SIMULATOR v1.0 =====
+1. Easy mode
+2. Hard mode
+3. Exit
+
+===== Select your character =====
+1. Knight
+2. Wizard
+
+Wild Fox appeared!
+You: Knight | HP: 150 | MP: 50
+Enemy: Fox | HP: 50 | MP: 0
+
+***** BATTLE *****
+1. Attack
+2. Spell
+```
+
+---
+
+## 🚀 Getting Started
+
+To run the game:
+```bash
+python main.py
+```
+
+Make sure you're using Python 3.x and running from a terminal or editor that supports input.
+
+---
+
+## 🧠 Motivation
+
+This project helped me apply what I learned about:
+- Control flow
+- Dictionaries
+- Functions
+- Loop handling
+- Game logic planning
+
+It’s also my first step toward building more interactive Python projects.
+
+---
+
+## 🔗 Related
+
+- [SoloLearn Python Course](https://www.sololearn.com/)
+- [My Dev.to post about this project](https://dev.to/sankworks/mini-project-2-rpg-simulator-v10-with-python-1eme)
+
+---
+
+## 📅 Project Status
+
+✅ Version 1.0 Complete  
+🚧 Version 1.1: Coming Soon...
